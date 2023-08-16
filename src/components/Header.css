@@ -1,0 +1,33 @@
+
+
+.headerContainer{
+  position: filed;
+  height: 80px;
+  width: 100%;
+  background-color: #999999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    .Alpha-shop{
+      align-items: center;
+      margin: 0 100px;
+    }
+    .info-button-container{
+      .info-button{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 50px;
+    }
+  }
+  .function-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+li{
+  margin-left: 20px;
+}
+
