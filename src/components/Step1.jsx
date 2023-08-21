@@ -9,10 +9,13 @@ function Step1() {
 
           <div className="title d-flex flex-column">
             <label htmlFor="" className="title-label">稱謂</label>
-            <select className="title-select" id="title-select">
-                <option>先生</option>
-                <option>小姐</option>
+            <div className="select-wrapper">
+            <select className="title-select" id="title-select" required>
+                <option value="" disabled selected>請問您的稱謂</option>
+                <option value="先生">先生</option>
+                <option value="小姐">小姐</option>
             </select>
+            </div>
           </div>
 
           <div className="name d-flex flex-column">
@@ -32,10 +35,13 @@ function Step1() {
 
           <div className="county d-flex flex-column">
             <label htmlFor="" className="county-label">縣市</label>
-            <select name="" id="county-select" className="county-select" placeholder="請選擇縣市" required>
+            <div className="select-wrapper">
+            <select name="" id="county-select" className="county-select"  required>
+              <option value="" disabled selected>請選擇縣市</option>
               <option>台北市</option>
               <option>新北市</option>
             </select>
+            </div>
           </div>
 
           <div className="address d-flex flex-column">

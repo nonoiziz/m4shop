@@ -2,7 +2,7 @@ import "./scss_dir/Step3.scss"
 
 function Step3() {
   return (
-    <section className="Step3">
+    <section className="Step3 d-none">
       <div className="step3-container">
         <h2 className="pay-info">付款資訊</h2>
         <div className="input-container3">

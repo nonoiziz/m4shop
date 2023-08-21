@@ -1,7 +1,6 @@
 .progressControl-container {
   display:flex;
   justify-content: space-around;
-  border: 2px solid lightblue;
   text-align: start;
   padding: 20px;
   .previouspage-container{
@@ -21,5 +20,18 @@
   .previouspage-button,
   .nextpage-button {
     font-size: 20px;
+  }
+
+  .previouspage-button{
+    background-color: darkgray;
+  }
+
+  .nextpage-button{
+    color: white;
+    background-color: lightblue;
+  }
+
+  &[disabled]{
+    opacity: 0.5;
   }
 }

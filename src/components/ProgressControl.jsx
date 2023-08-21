@@ -5,7 +5,7 @@ function ProgressControl() {
     <>
       <div className="progressControl-container">
         <div className="previouspage-container">
-          <button className="previouspage-button" id="previouspage-button">上一頁</button> 
+          <button className="previouspage-button" id="previouspage-button" disabled>上一頁</button> 
         </div>
 
         <div className="nextpage-container">

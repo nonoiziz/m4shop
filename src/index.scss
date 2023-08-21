@@ -332,4 +332,21 @@
    margin-top: 10px;
    margin-bottom: 10px;
    -webkit-appearance: none;
+   cursor:pointer;
+  &:invalid {
+      color: #747474;
+    }
+ }
+
+ .select-wrapper {
+   position: relative;
+   z-index: 0;
+   &::after{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    content: "\25BE";
+    z-index: -1;
+   }
  }
