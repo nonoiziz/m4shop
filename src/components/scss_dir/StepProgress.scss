@@ -8,14 +8,12 @@
 
 
 .stepprogress-container{
-  position: absolute;
-  top: 100px;
-  margin-left: 10%;
-  width: 50%;
+  width: 100%;
   background-color: #ffffff;
+  border: 2px solid tomato;
   .progress{
     text-align: start;
-    margin:30px 12%;
+    padding: 20px;
     .step-container{
       position: relative;
       display: flex;
@@ -53,6 +51,15 @@
           height: 24px;
           background-color: lightblue;
           border-radius: 50%;
+      }
+      &.checked .circle-container::after{
+          content: "\2714";
+      }
+      &.checked, &.active{
+        .circle-container{
+          background-color: black;
+          color:#ffffff;
+        }
       }
     }
   }

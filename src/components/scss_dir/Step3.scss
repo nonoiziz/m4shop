@@ -1,0 +1,30 @@
+.Step3 {
+  border: 2px solid green;
+  text-align: start;
+  padding: 20px;
+  flex: 1;
+
+  .pay-info {
+    margin-bottom: 30px;
+  }
+
+  .cardholder,
+  .cardnumber,
+  .expiredate,
+  .cvc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+
+  .cardinfo {
+    display: flex;
+    width: 90%;
+
+    .cvc {
+      margin-left: 5%;
+    }
+  }
+}

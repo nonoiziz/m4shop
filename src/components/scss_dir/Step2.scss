@@ -1,0 +1,32 @@
+.Step2 {
+  border: 2px solid lightblue;
+  text-align: start;
+  padding: 20px;
+  flex: 1;
+}
+
+.stander-shipping-container,
+.DHL-shipping-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 35px 0;
+  .select-stander, .select-DHL{
+    width: 30px;
+  }
+  .stander-shipping, .spending-days{
+    display: block;
+  }
+
+  .stander-shipping-info, .DHL-shipping-info{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.stander-shipping-price{
+  height: 25px;
+  width: 50px;
+  font-size: 12px;
+
+}
