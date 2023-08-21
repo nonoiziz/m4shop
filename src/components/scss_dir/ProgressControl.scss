@@ -1,0 +1,25 @@
+.progressControl-container {
+  display:flex;
+  justify-content: space-around;
+  border: 2px solid lightblue;
+  text-align: start;
+  padding: 20px;
+  .previouspage-container{
+    flex: 1;
+    justify-content: start;
+  }
+
+  .nextpage-container{
+    flex: 1;
+    text-align: end;
+  }
+  .nextpage-container, 
+  .previouspage-container{
+    width: 120px;
+  }
+
+  .previouspage-button,
+  .nextpage-button {
+    font-size: 20px;
+  }
+}

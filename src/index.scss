@@ -325,9 +325,11 @@
 
  select {
    display: block;
-   font-size: 120px;
+   padding: 8px;
+   font-size: 12px;
    width: 80%;
-   height: 40px;
+   height: 33px;
    margin-top: 10px;
    margin-bottom: 10px;
+   -webkit-appearance: none;
  }

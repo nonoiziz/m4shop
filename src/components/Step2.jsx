@@ -8,7 +8,7 @@ function Step2() {
         <div className="shippingmethod-container">
 
           <div className="stander-shipping-container">
-            <input type="radio" className="select-stander"  />
+            <input type="radio" className="select-stander active"  />
             <div className="stander-shipping-info">
               <span className="stander-shipping">標準運送</span>
               <span className="spending-days">約3~7個工作天</span>
@@ -17,7 +17,7 @@ function Step2() {
           </div>
 
           <div className="DHL-shipping-container">
-            <input type="radio" className="select-DHL"  />
+            <input type="radio" className="select-DHL invalid"  />
             <div className="DHL-shipping-info">
               <span className="stander-shipping">DHL貨運</span>
               <span className="spending-days">48小時內送達</span>
