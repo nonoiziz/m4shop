@@ -4,13 +4,13 @@
   position: filed;
   height: 80px;
   width: 100%;
-  background-color: #999999;
+  background-color: #898686;
   display: flex;
   justify-content: space-around;
   align-items: center;
     .Alpha-shop{
       align-items: center;
-      margin: 0 100px;
+      margin: 0 100px 0 0;
     }
     .info-button-container{
       .info-button{
@@ -27,7 +27,8 @@
   }
 }
 
-li{
+.info-but,
+.function-but{
   margin-left: 20px;
 }
 
