@@ -31,6 +31,7 @@
  a:hover,
  a:focus {
    text-decoration: none;
+   color:#18253d; 
  }
 
  img {
@@ -74,7 +75,7 @@
 
 
  /* basic setting */
- $body-bg: #f8f7fc;
+ $body-bg: #ffffff;
  $body-color: #18253d;
  $white: #fff;
  $main-blue: #001935;
@@ -117,9 +118,10 @@
  }
 
  body {
-   height: 100%;
    background: $body-bg;
    color: $body-color;
+   height: 100%;
+  
  }
 
  .d-none {

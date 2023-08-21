@@ -1,14 +1,21 @@
 
+.Header{
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 80%;
+  margin-left: 10%;
 
 .headerContainer{
-  position: filed;
-  height: 80px;
   width: 100%;
-  background-color: #898686;
+  height: 100%;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
     .Alpha-shop{
+      font-size: 30px;
+      font-weight: 700;
       align-items: center;
       margin: 0 100px 0 0;
     }
@@ -26,7 +33,7 @@
     align-items: center;
   }
 }
-
+}
 .info-but,
 .function-but{
   margin-left: 20px;

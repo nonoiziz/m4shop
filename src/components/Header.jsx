@@ -3,8 +3,7 @@ import "./scss_dir/Header.scss"
 function Header () {
   return (
     <div className='Header'>
-      <div className="headerContainer">
-        
+      <div className="headerContainer">  
         <div className="info-button-container">
           <ul className="info-button">
             <li className="info-but"><a href="#">男款</a></li>
@@ -21,9 +20,9 @@ function Header () {
         
         <div className="function-button-container">
           <ul className="function-button">
-            <li className="function-but"><a href="#">搜尋</a></li>
-            <li className="function-but"><a href="#">購物車</a></li>
-            <li className="function-but"><a href="#">DarkMode</a></li>
+            <li className="function-but"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li className="function-but"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li className="function-but"><a href="#"><i class="fa-solid fa-moon"></i></a></li>
           </ul>
         </div>
 
