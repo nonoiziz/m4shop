@@ -39,7 +39,7 @@ export default function Cart() {
       total += product.price * product.quantity
     })
     
-      return (total < 1200 ? total + 450 : total)
+      return (total < 1200 ? total + 350 : total)
   }
   
   
@@ -73,7 +73,7 @@ export default function Cart() {
   {listItems} 
     <div className="fee-container d-flex">
         <div className="shippingfee">運費</div>
-        <div className="totalFee">免運</div>
+        <div className="totalFee">{totalPrice() < 1200 ? "要加收350運費" : "這單免運"}</div>
       </div>
       <div className="totalprice-container d-flex">
         <div className="totalprice-title">小計</div>

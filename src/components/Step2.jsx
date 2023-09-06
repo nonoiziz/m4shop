@@ -1,8 +1,8 @@
 import "./scss_dir/Step2.scss"
 
-function Step2() {
+function Step2({currentStep}) { 
   return (
-    <section className="Step2 d-none">
+    <section className={currentStep === 2 ? " " : "d-none"}>
       <div className="step2-container">
         <h2 className="shipping">運送方式</h2>
         <div className="shippingmethod-container">

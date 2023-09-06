@@ -2,6 +2,7 @@
   text-align: start;
   padding: 20px;
   flex: 1;
+  height: 100%;
 
   .pay-info {
     margin-bottom: 30px;
@@ -26,4 +27,8 @@
       margin-left: 5%;
     }
   }
+}
+
+.step3-container {
+  margin: 20px;
 }
