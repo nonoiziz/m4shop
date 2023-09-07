@@ -44,8 +44,8 @@ export default function Cart() {
   
   
   const listItems = products.map( item =>
-    <div className="products-container">
-      <div className="product d-flex ml" key={item.id}>
+    <div className="products-container" key={item.id}>
+      <div className="product d-flex ml" >
         <div className="product-image">
           <img src={item.img} className="product-avatar" />
         </div>

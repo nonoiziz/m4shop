@@ -2,7 +2,7 @@ import "./scss_dir/StepProgress.scss"
 
 function StepProgress ({currentStep}) {
   return (
-  <div className="stepprogress-container">
+  <div className="stepProgress-container">
     <div className="progress">
       <h2 className="pay">結帳</h2>
         <div className="step-container">

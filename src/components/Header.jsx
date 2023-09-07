@@ -20,9 +20,9 @@ function Header () {
         
         <div className="function-button-container">
           <ul className="function-button">
-            <li className="function-but"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li className="function-but"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li className="function-but"><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+            <li className="function-but"><a href="#"><i className="fa-solid fa-magnifying-glass"></i></a></li>
+            <li className="function-but"><a href="#"><i className="fa-solid fa-cart-shopping"></i></a></li>
+            <li className="function-but"><a href="#"><i className="fa-solid fa-moon"></i></a></li>
           </ul>
         </div>
 
