@@ -1,8 +1,8 @@
-import "./scss_dir/Step3.scss"
+import "../style/Step3.scss"
 
 function Step3({currentStep}) {
   return (
-    <section className={currentStep === 3 ? '' : 'd-none'}>
+    <section>
       <div className="step3-container">
         <h2 className="pay-info">付款資訊</h2>
         <div className="input-container3">

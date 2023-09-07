@@ -1,76 +1,45 @@
-import './scss_dir/Cart.scss'
-import { product } from './data/product-data'
+import '../style/Cart.scss'
+import { product } from '../assets/product-data'
 import { useState } from 'react';
-
+import CartItem from './CartItem'
 
 
 export default function Cart() {
   const [ products, setProducts ] = useState([...product])
   
-  function handleIncreaseClick (productId) {
+  function handleChangeClick (productId, action) {
     setProducts(products.map((product) => {
         if (product.id === productId) {
-          return {
-            ...product,
-            quantity: product.quantity + 1
-          };
-        } else {
-          return product
+          if (action === 'increase') {
+            return { ...product, quantity: product.quantity + 1 };
+        } else if (action === 'decrease' && product.quantity > 0 ) {
+          return { ...product, quantity: product.quantity - 1}
         }
-      }))
+      }
+    return product;
+  }))
   }
     
-  function handleDecreaseClick (productId) {
-    setProducts(products.map((product) => {
-      if (product.id === productId) {
-        return {
-          ...product,
-          quantity: (product.quantity > 0 ? product.quantity - 1 : product.quantity)
-        } 
-      } else {
-          return product
-        }
-    }))
-  }
 
   function totalPrice() {
-    let total = 0
-    products.forEach((product) => {
-      total += product.price * product.quantity
-    })
-    
+    const total = products.reduce((accumulator, product) => {
+      return accumulator + product.price * product.quantity
+    }, 0);
       return (total < 1200 ? total + 350 : total)
   }
   
   
-  const listItems = products.map( item =>
-    <div className="products-container" key={item.id}>
-      <div className="product d-flex ml" >
-        <div className="product-image">
-          <img src={item.img} className="product-avatar" />
-        </div>
-        <div className="product-set d-flex">
-          <div className="product-info d-flex">
-            <div className="product-name ml-5">{item.name}</div>
-            <div className="product-price">{item.price * item.quantity}</div>
-          </div>
-      
-          <div className="buyer-action d-flex">
-            <div className="circle-container">
-            <button onClick={() => {handleDecreaseClick(item.id)}} className="mount-reduce" id='mount-reduce'>-</button></div>
-            <div className="mount-counter">{item.quantity}</div>
-            <div className="circle-container">
-            <button onClick={() => {handleIncreaseClick(item.id);}} className="mount-add" id="mount-add">+</button></div>
-          </div>
-        </div>
-      </div>
-      </div>
-    
-  );
+ 
   return <> 
   <section className="cart">
   <h3>購物籃</h3>
-  {listItems} 
+  {products.map((item) => 
+  <CartItem 
+    key={item.id}
+    item={item}
+    handleChangeClick={handleChangeClick}
+    
+    /> )}
     <div className="fee-container d-flex">
         <div className="shippingfee">運費</div>
         <div className="totalFee">{totalPrice() < 1200 ? "要加收350運費" : "這單免運"}</div>

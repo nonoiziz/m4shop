@@ -1,4 +1,4 @@
-import "./scss_dir/StepProgress.scss"
+import "../style/StepProgress.scss"
 
 function StepProgress ({currentStep}) {
   return (

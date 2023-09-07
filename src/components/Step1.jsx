@@ -1,4 +1,4 @@
-import "./scss_dir/Step1.scss"
+import "../style/Step1.scss"
 
 function Step1() {
   return (

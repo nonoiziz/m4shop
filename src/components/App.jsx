@@ -1,4 +1,4 @@
-import './scss_dir/App.scss'
+import '../style/App.scss'
 import Header from './Header'
 import ProgressControl from './ProgressControl'
 import Cart from './Cart'
