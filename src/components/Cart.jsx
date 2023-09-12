@@ -1,12 +1,14 @@
 import '../style/Cart.scss'
-import { product } from '../assets/product-data'
 import { useState } from 'react';
 import CartItem from './CartItem'
-
+import { useContext } from 'react'
+import { CartContext } from '../assets/CartContext'
 
 export default function Cart() {
-  const [ products, setProducts ] = useState([...product])
+  const  product   = useContext(CartContext)
+  const [ products, setProducts ] = useState(product)
   
+
   function handleChangeClick (productId, action) {
     setProducts(products.map((product) => {
         if (product.id === productId) {
