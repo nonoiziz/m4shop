@@ -1,4 +1,4 @@
-import { createContext } from 'react'
+import { createContext} from 'react'
 
 
 export const product = 
@@ -19,5 +19,5 @@ export const product =
   },
 ]
 
-
 export const CartContext = createContext([...product])
+
